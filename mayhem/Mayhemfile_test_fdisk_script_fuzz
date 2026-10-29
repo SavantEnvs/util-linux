@@ -1,0 +1,9 @@
+project: savantenvs/util-linux
+target: test_fdisk_script_fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/test_fdisk_script_fuzz/testsuite
+cmds:
+  - cmd: /mayhem/test_fdisk_script_fuzz
+    libfuzzer: true
+    timeout: 10

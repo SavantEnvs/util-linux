@@ -1,0 +1,2 @@
+# Keep .git (full history for the grader). Exclude build leftovers from the context.
+mayhem/build/
