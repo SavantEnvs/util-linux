@@ -1,0 +1,10 @@
+project: savantenvs/util-linux
+target: col_stdin-mined-f9baae0
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/col_stdin-mined-f9baae0/testsuite
+cmds:
+  - cmd: /mayhem/col_stdin
+    env:
+      LC_ALL: C.UTF-8
+    timeout: 10
